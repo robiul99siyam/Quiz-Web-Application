@@ -26,7 +26,11 @@ export default function LoginPage() {
         <div className="w-full max-w-md">
           <h2 className="text-3xl font-bold mb-8 flex gap-2 items-center">
             <span>Welcome to</span>
-            <img src={logo} className="h-7" />
+
+            <Link to="/">
+              {" "}
+              <img src={logo} className="h-7" />
+            </Link>
           </h2>
           <h1 className="text-5xl font-bold mb-8">Sign in</h1>
 

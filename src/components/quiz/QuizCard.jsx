@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BackGroudImage from "../../assets/backgrounds/2.jpg";
 import useToken from "../../hooks/useToken";
-export default function QuizCard() {
+export default function QuizCard({ quiz }) {
+  console.log(quiz);
   const token = useToken();
 
   return (
@@ -12,7 +13,7 @@ export default function QuizCard() {
         className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] relative group cursor-pointer"
       >
         <div className="group-hover:scale-105 absolute transition-all text-white  text-center top-1/2 -translate-y-1/2 px-4">
-          <h1 className=" text-5xl">JavaScript Basic Quiz</h1>
+          <h1 className=" text-5xl">{quiz.title}</h1>
           <p className="mt-2 text-lg">
             Test your knowledge of JavaScript basics with quizzes that cover
             essential concepts, syntax, and foundational programming skills

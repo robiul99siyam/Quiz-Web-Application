@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
 const AuthContext = createContext();
-
-export { AuthContext };
+const QuizContext = createContext();
+export { AuthContext, QuizContext };
