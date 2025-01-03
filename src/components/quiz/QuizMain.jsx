@@ -30,7 +30,7 @@ export default function QuizMain() {
     quizDataFetch();
   }, []);
   const quizs = state?.quizs;
-  console.log(quizs);
+
   return (
     <main className="bg-white p-6 rounded-md h-full">
       <section>
